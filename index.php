@@ -11,11 +11,14 @@
         } else {
             if (is_dir("regdInfo/$email")) {
                   $fileOpen = fopen("regdInfo/$email/info.txt", "r");
-                  fgets($fileOpen);
+                  session_start(); // session start if you get first name
+                  $_SESSION['firstName'] = fgets($fileOpen); // in info folder 1st line username
                   fgets($fileOpen);
                   fgets($fileOpen);
                  $getInfoPassword =  trim(fgets($fileOpen));
                     if ($password == $getInfoPassword) {
+                      session_start();
+                      $_SESSION['email'] = $email;
                       header("location:account.php");
                     } else {
                       $errorMsg = "Please enter correct password";

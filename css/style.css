@@ -1,0 +1,7 @@
+.header__profile-photo {
+  display: block;
+  width: 36px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
