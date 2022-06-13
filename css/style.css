@@ -5,3 +5,13 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+#form {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  #form {
+    width: 50%;
+  }
+}

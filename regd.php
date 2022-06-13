@@ -51,6 +51,7 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Registration</title>
     <link rel="stylesheet" href="vender/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -74,9 +75,10 @@ if (isset($_POST['submit'])) {
           <h1 class="login__title text-center pt-5 m-0">Registration</h1>
 
           <form
-            class="w-50 mx-auto pt-md-5"
+            class=" mx-auto pt-5 "
             method="post"
             enctype="multipart/form-data"
+            id="form"
           >
             <div class="row">
               <div class="col-md-6 mb-2">
@@ -91,6 +93,11 @@ if (isset($_POST['submit'])) {
                   placeholder="Enter your first name"
                   
                 />
+
+                <div class="invalid-feedback">
+                Please provide a valid 5-10 character long first name
+              </div>
+              <div class="valid-feedback">Looks good!</div>
               </div>
 
               <div class="col-md-6 mb-2">
@@ -105,6 +112,13 @@ if (isset($_POST['submit'])) {
                   placeholder="Enter your last name"
                   
                 />
+
+                <div class="invalid-feedback">
+                Please provide a valid 5-10 character long last name
+              </div>
+              <div class="valid-feedback">Looks good!</div>
+
+                
               </div>
             </div>
 
@@ -120,6 +134,11 @@ if (isset($_POST['submit'])) {
                 placeholder="Enter your email"
                 
               />
+
+              <div class="invalid-feedback">
+              Please provide a valid email address
+            </div>
+            <div class="valid-feedback">Looks good!</div>
             </div>
 
             <div class="my-2">
@@ -134,6 +153,9 @@ if (isset($_POST['submit'])) {
                 placeholder="Enter your password"
                 
               />
+
+              <div class="invalid-feedback">Please provide a strong password</div>
+            <div class="valid-feedback">Looks good!</div>
             </div>
 
             <div class="my-2">
@@ -167,6 +189,7 @@ if (isset($_POST['submit'])) {
     </div>
 
     <script src="vender/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
 
