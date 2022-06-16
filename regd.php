@@ -48,6 +48,7 @@ if (isset($_POST['submit'])) {
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="author" content="Rohit Kumar" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Registration</title>
     <link rel="stylesheet" href="vender/bootstrap.min.css" />
@@ -70,7 +71,7 @@ if (isset($_POST['submit'])) {
     </div>
      
 
-      <div class="container">
+      <div class="container ">
         <div class="login__content">
           <h1 class="login__title text-center pt-5 m-0">Registration</h1>
 
