@@ -20,7 +20,7 @@ $email = $_SESSION['email'];
   <body>
     <nav class="navbar bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold">Profile</a>
+        <a class="navbar-brand text-white fw-bold">Hello!</a>
 
         <div class="header__profile d-flex align-items-center gap-2">
           <!-- User Profile  -->
@@ -34,7 +34,7 @@ $email = $_SESSION['email'];
             />
           </div>
           <!-- User Name  -->
-          <h6 class="text-white m-0">Hello!
+          <h6 class="text-white m-0">
             <?= $firstName; ?>  
           </h6>
         </div>
